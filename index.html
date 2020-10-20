@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo JSP</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+    <style>
+        /*Noi dung CSS*/
+        a:visited{
+            color:red
+        }
+    </style>
+
+    <a href="https://google.com.vn" title="đến google">
+        Đến google
+    </a>
+
+    <a href="https://bing.com" title="đến bing">
+        Đến bing
+    </a>
+
+    <div class="test" id="test1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolore sequi vitae culpa molestiae possimus animi provident natus recusandae harum, debitis deleniti quas in, quae nulla! Ducimus eaque laboriosam repellendus.</div>
+    
+    <style>
+        .test::after{
+            content: " ";
+            background:red
+        }
+
+        #test1{
+
+        }
+    </style>
+    <!-- <div>a</div>
+    <div>b</div>
+
+    <span>c</span>
+    <span>d</span> -->
+
+    <!-- <img src="https://kynguyenlamdep.com/wp-content/uploads/2020/01/hinh-anh-dep-hoa-bo-cong-anh-700x466.jpg" alt="ảnh test"/> -->
+    <!-- <strike>Test</strike> -->
+
+    <!-- <p>
+        <mark>
+            Lorem ipsum </mark>
+            dolor sit amet consectetur adipisicing elit. Temporibus autem velit tenetur nulla hic, a cum consequuntur iste corrupti praesentium et eligendi, itaque, incidunt nihil dolores placeat perspiciatis error culpa.
+    </p>
+
+    <ul>
+        <li>Chả cá</li>
+        <li>Chả mực</li>
+    </ul>
+
+    <ol>
+        <li>Chả cá</li>
+        <li>Chả mực</li>
+    </ol> -->
+
+    <form method="GET" action="https://google.com">
+        <!--Thông tin các thẻ con của form-->
+       
+        <div>
+            Sở thích của bạn là gì ?
+        </div>
+
+        <div>
+            <label>Đá bóng</label>
+            <input name="hobby" value="0" type="checkbox"/>
+        </div>
+        <div>
+            <label>Chơi game</label>
+            <input name="hobby" value="1" type="checkbox"/>
+        </div>
+        <div>
+            <label>Lập trình</label>
+            <input name="hobby" value="2" type="checkbox"/>
+        </div>
+      
+        <div>Giới tính ?</div>
+        <div>
+            <label>Nam</label>
+            <input name="gender" value="1" type="radio">
+        </div>
+
+        <div>
+            <label>Nữ</label>
+            <input name="gender" value="2" type="radio">
+        </div>
+
+        <select name="province">
+            <option value="1">Hà Nội</option>
+            <option value="2">Quảng Ninh</option>
+            <option value="3">Hải Phòng</option>
+        </select>
+
+        <button style="">Đăng nhập</button>
+    </form>
+
+    <style>
+        input[type="radio"]{
+
+        }
+    </style>
+</body>
+</html>

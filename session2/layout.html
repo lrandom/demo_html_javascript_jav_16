@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header"></div>
+    <div class="nav-menu"></div>
+    <div class="content">
+        <div class="col-1"></div>
+        <div class="col-2"></div>
+        <div class="col-3"></div>
+    </div>
+    <div class="footer"></div>
+</div>
+
+<style>
+    .wrapper {
+        width: 896px;
+        border: 1px solid red;
+        margin: 0px auto;
+    }
+
+    .wrapper > .header {
+        height: 50px;
+        background: red;
+    }
+
+    .wrapper > .nav-menu {
+        height: 30px;
+        background: red;
+        margin-top: 10px;
+    }
+
+    .wrapper > .content {
+        margin-top: 10px;
+        height: 600px;
+    }
+
+    .wrapper > .content .col-1 {
+        width: 20%;
+        background: red;
+        height: 100%;
+        float: left;
+    }
+
+    .wrapper > .content .col-2 {
+        width: 50%;
+        background: violet;
+        height: 100%;
+        float: left;
+        margin-left: 5%;
+    }
+
+    .wrapper > .content .col-3 {
+        width: 20%;
+        background: yellow;
+        height: 100%;
+        float: right;
+    }
+
+    .wrapper > .footer {
+        margin-top: 10px;
+        background: red;
+        height: 50px;
+    }
+</style>
+</body>
+</html>

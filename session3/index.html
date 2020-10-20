@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+
+<script type="text/javascript" src="main.js"></script>
+
+<script>
+    /*function bai1() {
+        let countdown = 10;
+        let id = setInterval(function () {
+            countdown -= 1;
+            console.log(countdown);
+            if (countdown <= 0) {
+                clearInterval(id);
+                alert('Time up');
+            }
+        }, 1000);
+    }
+    bai1();*/
+
+    function bai2(amount,func){
+        setTimeout(function(){
+            amount-=150;
+            console.log("Đi xem phim");
+            setTimeout(function(){
+                amount-=100;
+                console.log("Đi ăn");
+                func(amount);
+            })
+        },2000);
+    };
+
+    bai2(500,function(amount){
+        console.log("Số tiền còn lại là "+amount);
+    })
+</script>
+</html>
