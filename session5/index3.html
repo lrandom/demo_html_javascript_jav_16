@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="box"></div>
+<button onclick="hideBox()">hide box</button>
+<button onclick="showBox()">show box</button>
+<button onclick="toggleBox()">toggle box</button>
+<button onclick="slideDown()">Slide Down</button>
+<button onclick="slideUp()">Slide Up</button>
+<button onclick="toggleSlide()">Toggle Slide</button>
+<button onclick="fadeIn()">fadeIn</button>
+<button onclick="fadeOut()">fadeOut</button>
+<button onclick="myAnimate()">animate</button>
+</body>
+<style>
+    #box {
+        width: 200px;
+        height: 200px;
+        background: red;
+        position: relative;
+    }
+</style>
+
+<script>
+    function hideBox(){
+        $('#box').hide(1000,function(){
+            alert("Hi");
+        });
+        $('#box').css({
+            'display':'none'
+        })
+    }
+
+    function showBox(){
+        $('#box').show();
+        $('#box').css({
+            'display':'block'
+        })
+    }
+
+    function toggleBox(){
+        $('#box').toggle();
+    }
+
+    function slideDown(){
+        $('#box').slideDown();
+    }
+
+    function slideUp(){
+        $('#box').slideUp();
+    }
+
+    function toggleSlide(){
+        $('#box').slideToggle();
+    }
+
+    function fadeIn(){
+        $('#box').fadeIn();
+    }
+
+    function fadeOut(){
+        $('#box').fadeOut();
+    }
+
+    function myAnimate(){
+        let increment = 0;
+        setInterval(function(){
+            increment+=50;
+            $('#box').animate({
+                left: increment,
+                top: 100
+            })
+        },1000)
+
+    }
+</script>
+</html>

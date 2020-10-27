@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a82cb536-936a-49f5-ba46-083d403b0675" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/session4/bai4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/session4/bai5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/session4/bai6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session5/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session5/index2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session5/index3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -72,7 +72,7 @@
       <workItem from="1603195087731" duration="2156000" />
       <workItem from="1603371574273" duration="1105000" />
       <workItem from="1603381027402" duration="1131000" />
-      <workItem from="1603798418179" duration="1267000" />
+      <workItem from="1603798418179" duration="4801000" />
     </task>
     <servers />
   </component>

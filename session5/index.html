@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <span>Hello World</span>
+</div>
+
+
+<button onclick="demo()">demo</button>
+
+<input type="text" id="input-text"/>
+<button onclick="demoVal()">demo val</button>
+
+<ul id="ul">
+    <li>1</li>
+</ul>
+<button onclick="myAppendChild()">append child</button>
+
+</body>
+<script>
+    function demo(){
+        //Lấy ra
+        //const html = $('#wrapper').html();
+        //alert(html);// <span>Hello World</span>
+
+        //Đẩy vào
+        //$('#wrapper').html('<span>Hi World</span>');
+
+        //Xoá wrapper
+        //$('#wrapper').remove();
+
+        //Thêm phần tử sau wrapper
+        //$('#wrapper').after('<div id="wrapper-2">Hi bro</div>');
+    }
+
+    function demoVal(){
+        //lay gia tri cua input text
+        //let val = $('#input-text').val();
+        //alert(val);
+
+        //Set giá trị vào
+        $('#input-text').val('Hihi');
+    }
+
+    function myAppendChild(){
+        $('#ul').append('<li>2</li>');
+    }
+</script>
+</html>
