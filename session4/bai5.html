@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="wrapper">
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 2</p>
+    <p>This is paragraph 3</p>
+    <p>This is paragraph 4</p>
+</div>
+
+<div id="copy-wrapper"></div>
+
+<button onclick="cloneP()">Add P</button>
+</body>
+
+<script>
+    function cloneP() {
+        let childNodesP = document.getElementById('wrapper').children;
+        let copyWrapper = document.getElementById('copy-wrapper');
+        for (let i = 0; i < childNodesP.length; i++){
+            //lay data cua p cua wrapper
+            const node = childNodesP[i];
+            const text = node.innerText;
+
+            //tao p tu data cua p cua wrapper
+            let cloneNode  = document.createElement('p');
+            cloneNode.innerText = text;
+
+            //append p vao copy-wrapper
+            copyWrapper.appendChild(cloneNode);
+        }
+    }
+</script>
+</html>

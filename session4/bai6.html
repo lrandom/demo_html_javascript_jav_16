@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<img id="image" src=""/>
+<p>
+    <a onclick="load(this)"  href="javascript:void(0)">https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&h=350</a>
+</p>
+<p><a onclick="load(this)" href="javascript:void(0)">https://estaticos.qdq.com/swdata/photos/719/719902669/Naturaleza_Fondo-de-pantalla-Naturaleza-103.jpg</a></p>
+<p><a onclick="load(this)" href="javascript:void(0)">https://c1.staticflickr.com/5/4126/5014409129_a34e7856bf_b.jpg</a></p>
+</body>
+
+<script>
+    const imageNode =document.getElementById('image');
+    function load(aNode){
+        const textLink = aNode.innerText;
+        imageNode.setAttribute('src',textLink);
+    }
+</script>
+</html>

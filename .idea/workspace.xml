@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a82cb536-936a-49f5-ba46-083d403b0675" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/session4/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/session4/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session4/bai4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session4/bai5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session4/bai6.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +70,9 @@
       <workItem from="1602633809027" duration="499000" />
       <workItem from="1602657758780" duration="135000" />
       <workItem from="1603195087731" duration="2156000" />
-      <workItem from="1603371574273" duration="604000" />
+      <workItem from="1603371574273" duration="1105000" />
+      <workItem from="1603381027402" duration="1131000" />
+      <workItem from="1603798418179" duration="1267000" />
     </task>
     <servers />
   </component>
@@ -86,5 +89,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

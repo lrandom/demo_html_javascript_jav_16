@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  <div id="wrapper"></div>
+
+  <button onclick="addP()">Add P</button>
+</body>
+
+<script>
+    function addP() {
+        const contents = [
+            "paragraph1",
+            "paragraph2",
+            "paragraph3"
+        ];
+        //<p>paragraph1</p>
+
+        let wrapperNode = document.getElementById('wrapper');
+        for (let i = 0; i < contents.length; i++) {
+            const item = contents[i];
+            let node = document.createElement("p");
+            node.innerText = item;
+
+            wrapperNode.appendChild(node);
+        }
+    }
+</script>
+</html>
