@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+   <div class="photo-zoom">
+       <div class="img-preview">
+           <img src=""/>
+       </div>
+       <div class="thumb-preview">
+           <img src="imgs/1.jpg"/>
+           <img src="imgs/2.jpg"/>
+           <img src="imgs/3.jpg"/>
+       </div>
+   </div>
+
+   <script>
+       $('.thumb-preview img').click(function() {
+           let src = $(this).attr('src');
+           $('.img-preview img').attr('src',src);
+       })
+   </script>
+   <style>
+       .photo-zoom{
+           width:500px;
+           height:500px;
+       }
+
+       .photo-zoom .img-preview{
+           height:400px;
+           width:100%;
+           overflow:hidden
+       }
+
+       .photo-zoom .thumb-preview{
+           display:flex;
+           justify-content:space-around;
+       }
+
+       .photo-zoom .thumb-preview img{
+           width:60px;
+           height:60px;
+       }
+   </style>
+</body>
+</html>

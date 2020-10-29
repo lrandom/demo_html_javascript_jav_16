@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="slider">
+    <div onclick="prev()">Prev</div>
+    <div class="inner-slider">
+        <div><img src="imgs/2.jpg" alt="Ảnh 2"/></div>
+        <div><img src="imgs/3.jpg" alt="Ảnh 3"/></div>
+        <div><img src="imgs/1.jpg" alt="Ảnh 1"/></div>
+    </div>
+    <div onclick="next()">Next</div>
+</div>
+</body>
+
+<script>
+    function prev(){
+        let node = $('.inner-slider > div').eq(0);
+        let childNode = node.find('img');
+        let src = childNode.attr('src');
+        let alt = childNode.attr('alt');
+        $('.inner-slider').append(`<div><img src="${src}" alt="${alt}"></div>`);
+        node.remove();
+    }
+
+    function next(){
+        let childNodeLength = $('.inner-slider > div').length;
+        let node = $('.inner-slider > div').eq(childNodeLength-1);
+        let childNode = node.find('img');
+        let src = childNode.attr('src');
+        let alt = childNode.attr('alt');
+        $('.inner-slider').prepend(`<div><img src="${src}" alt="${alt}"></div>`);
+        node.remove();
+    }
+</script>
+
+<style>
+    .slider{
+        display:flex;
+        justify-content:space-between;
+        width:600px;
+        height:300px;
+
+    }
+    .slider .inner-slider{
+        position: relative;
+        width:500px;
+        overflow: hidden;
+    }
+
+
+    .slider .inner-slider > div{
+        position: absolute;
+        width:500px;
+        height:250px;
+        overflow: hidden;
+    }
+
+    .slider .inner-slider > div img{
+        height:100%;
+        width:100%;
+    }
+</style>
+</html>
